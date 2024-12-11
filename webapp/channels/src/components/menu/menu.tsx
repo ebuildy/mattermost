@@ -239,7 +239,7 @@ export function Menu(props: Props) {
             {renderMenuButton()}
             <MenuContext.Provider value={providerValue}>
                 <MuiPopoverStyled
-                    aria-label={props.menu?.['aria-label'] ?? ''}
+                    aria-label={props.menu?.['aria-label']}
                     anchorEl={anchorElement}
                     open={isMenuOpen}
                     onClose={handleMenuClose}
@@ -262,7 +262,7 @@ export function Menu(props: Props) {
                     {props.menuHeader}
                     <MuiMenuList
                         id={props.menu.id}
-                        aria-label={props.menu?.['aria-label'] ?? ''}
+                        aria-label={props.menu?.['aria-label']}
                         autoFocusItem={true}
                     >
                         {props.children}
